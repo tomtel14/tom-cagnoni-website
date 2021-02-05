@@ -1,24 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header/Header';
+import MusicalDirector from './components/sections/MusicalDirector';
+import Composer from './components/sections/Composer';
+import Instrumentalist from './components/sections/Instrumentalist';
+import FunctionBand from './components/sections/FunctionBand';
+import Tutor from './components/sections/Tutor';
+import Contact from './components/sections/Contact';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <MusicalDirector />
+      <Composer />
+      <Instrumentalist />
+      <FunctionBand />
+      <Tutor />
+      <Contact />
+      <Footer />
+    </>
   );
 }
 

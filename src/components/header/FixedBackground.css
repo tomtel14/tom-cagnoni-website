@@ -1,0 +1,14 @@
+.fixed-bg-container {
+  background: url('../../images/tom-cagnoni.jpg') center/cover fixed no-repeat;
+}
+
+.fixed-bg {
+  height: 100vh;
+}
+
+@media (min-width: 960px) {
+  .fixed-bg {
+    height: 100vh;
+    z-index: 1;
+  }
+}

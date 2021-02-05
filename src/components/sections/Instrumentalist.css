@@ -1,0 +1,47 @@
+.guitarist-img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.iframe-cont-spot {
+  position: relative;
+  width: 100%;
+  padding-bottom: 80px;
+  height: 0;
+  margin-bottom: 20px;
+}
+
+.iframe-cont-spot iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.studio-img {
+  display: none;
+}
+
+@media (min-width: 960px) {
+  .instrumentalist-img-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+    margin-bottom: 25px;
+  }
+  .studio-img {
+    display: inline-block;
+  }
+  .instrumentalist-img-cont img {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1060px) {
+  .instrumentalist-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+  }
+}

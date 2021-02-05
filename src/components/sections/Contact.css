@@ -1,0 +1,35 @@
+.icons-cont {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.icon-cont a {
+  margin-left: 10px;
+}
+
+.icon-cont i {
+  color: #383838;
+}
+
+.contact-img-cont img {
+  width: 100%;
+}
+
+@media (min-width: 960px) {
+  .icons-cont {
+    display: flex;
+  }
+  .icon-cont i {
+    font-size: 1.6rem;
+  }
+  .email-cont {
+    margin-left: 30px;
+  }
+  .icon-cont {
+    display: flex;
+  }
+  .icon-cont a:hover{
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,149 @@
+.navbar {
+  height: 70px;
+  text-align: right;
+  font-size: 2rem;
+  font-weight: 300;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  z-index: 50;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.nav-list {
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.second-title {
+  display: none;
+}
+
+@media (min-width: 961px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    z-index: 3;
+    height: 100px;
+  } 
+  .navbar.color {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 10px 12px -7px rgba(0,0,0,0.93);
+  }
+  .nav-list {
+    margin-top: 25px;
+  }
+  .nav-list a {
+    margin-right: 25px;
+    border-bottom: 1px solid transparent;
+  }
+  .nav-list a:hover {
+    border-bottom: 1px solid #fff;
+    transition: all 0.2s linear;
+  }
+  .nav-list a.active {
+    border-bottom: 1px solid #fff;
+    transition: 0.3s border-bottom linear;
+    transition-delay: 0.2s ;
+  }
+  .nav-cont {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+  }
+}
+
+@media (min-width: 1281px) {
+  .second-title {
+    display: block;
+    margin-top: 14px;
+    color: white;
+    text-align: center;
+    opacity: 1;
+    transition: 1s all linear;
+  }
+  .second-title h3 {
+    font-weight: 300;
+  }
+  .second-title p {
+    font-size: 0.8rem;
+    word-spacing: 3px;
+    color: #f7f7f79c;
+  }
+  .second-title.hidden {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 960px) {
+  .navbar {
+    box-shadow: 0 5px 15px rgba(0,0,0,.7);
+  }
+  .menu-icon {
+    padding-top: 18px;
+    color: #fff;
+    display: block;
+    margin-right: 10px;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    position: absolute;
+    top: 70px;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    border-top: 1px solid #fff;
+    transition: 0.3s all linear; 
+  }
+  .nav-list li {
+    text-align: center;
+  }
+  .nav-list li:first-child {
+    margin-top: 20px;
+  }
+  .nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    display: block;
+    padding: 12px 10px 
+  }
+  .nav-list.active {
+    opacity: 0.97;
+    z-index: 5;
+    left: 0;
+    background-color: black;
+    transition: 0.3s all linear;
+  }
+}
+
+
+
+
+
+
+
+
+

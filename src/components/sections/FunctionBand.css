@@ -1,0 +1,16 @@
+#cta-link {
+  text-decoration: underline;
+}
+
+.func-band-img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1060px) {
+  .func-band-cont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 25px;
+  }
+}

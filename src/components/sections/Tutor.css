@@ -1,0 +1,32 @@
+.tutor-list {
+  padding-inline-start: 20px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.tutor-img {
+  width: 100%;
+}
+
+@media (min-width: 1060px) {
+  .tutor-list {
+    line-height: 30px;
+    margin-bottom: 0;
+    padding-right: 80px;
+    width: 50%;
+  }
+  .tutor-img-cont {
+    width: 50%;
+    text-align: right;
+  }
+  .tutor-list li {
+    margin-bottom: 8px;
+  }
+  .tutor-grid {
+    display: flex;
+  }
+  .tutor-img {
+    max-width: 475px;
+    height: auto;
+  }
+}

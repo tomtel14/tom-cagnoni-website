@@ -1,0 +1,30 @@
+.about-container {
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  font-weight: 300;
+  line-height: 25px;
+}
+
+.about-text-more {
+  margin-top: 20px;
+}
+
+@media (min-width: 960px) {
+  .about-text-more {
+    margin-top: 20px;
+    display: block;
+  }
+  .about-container {
+    width: 40%;
+    text-align: left;
+    z-index: 2;
+    opacity: 1;
+    transition: 0.3s all linear;
+    margin-top: 80px;
+  }
+  .about-container.hidden {
+    opacity: 0;
+    transition: 0.3s all linear;
+  }
+}

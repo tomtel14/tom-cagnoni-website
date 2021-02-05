@@ -1,0 +1,57 @@
+.title-container {
+  text-align: center;
+  color: #fff;
+}
+
+.name {
+  font-size: 2.8rem;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+
+.role {
+  display: inline;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: #f7f7f763;
+}
+
+#line {
+  display: none;
+}
+
+.title-container {
+  padding-top: 70px;
+  margin-top: 30px;
+}
+
+@media (min-width: 960px) {
+  .title-container {
+    display: inline-block;
+    margin-top: 20vh;
+    opacity: 1;
+    transition: opacity 0.3s linear;
+    padding-top: 0;
+  }
+  .title-container.hidden {
+    opacity: 0;
+    transition: all 0.3s linear;
+  }
+  .name {
+    font-size: 5.5rem;
+  }
+  .top-row, .bottom-row {
+    display: inline;
+  }
+  .role {
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    word-spacing: 10px;
+  }
+  #line {
+    display: inline;
+  }
+}
+
+
+
